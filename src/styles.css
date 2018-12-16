@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+/*   dropdown    */
+.full-parent-width{
+    width:100%;
+}
+
+.col-6{
+    padding-right: 2%;
+}
+
+#title3-h2{
+    padding: 30px;
+    color: #00004d;
+    font-weight: bold;
+}
+
+#body-layout{
+    font-size: 150%;
+}
+
+.part-number-header{
+    color: #cc0000;
+    text-align: center;
+}
