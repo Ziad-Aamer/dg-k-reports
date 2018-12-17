@@ -1,53 +1,60 @@
 <div id="body-layout">
     <form class="example-form">
         <ol>
-            <div class="row">
-            <div class="col-6">1. Select Report Type</div>
-            <div class="col-6"><app-dropdown class="float-right full-parent-width" ></app-dropdown></div>
-            </div>
+            <li>           
+                <div class="row">
+                <div class="col-6">Select Report Type</div>
+                <div class="col-6"><app-dropdown class="full-parent-width" ></app-dropdown></div>
+                </div>
+            </li>
 
         <h3 class="part-number-header">
             Part I: Particulars of the Reporting Institution
         </h3>
         
         <li>
-            <p>Name Of the Reporting Institution</p>
-            <mat-form-field class="">
-                <input matInput placeholder="Reporting Institution">
-            </mat-form-field>
+            <div class="row">
+                <div class="col-6">Name Of the Reporting Institution</div>
+                <div class="col-6">
+                    <mat-form-field class="float-right full-parent-width">
+                        <input matInput placeholder="Reporting Institution">
+                    </mat-form-field>
+                </div>
+            </div>
         </li>
         <li>
             <p>Address and Contact Of Head Office</p>
-            <div>
+            <div class="row">
+                <div class="col-12">
+                    <mat-form-field >
+                        <input matInput placeholder="Physical">
+                    </mat-form-field>
+                </div>
+                <div class="col-12">
                 <mat-form-field >
-                    <input matInput placeholder="Physical">
+                    <input matInput placeholder="Postal">
                 </mat-form-field>
+                </div>
+                <div class="col-12">
+                <mat-form-field >
+                    <input matInput placeholder="Telephone">
+                </mat-form-field>
+                </div>
+                <div class="col-12">
+                <mat-form-field >
+                    <input matInput placeholder="Email">
+                </mat-form-field>
+                </div>
+                <div class="col-12">
+                <mat-form-field >
+                    <input matInput placeholder="Fax">
+                </mat-form-field>
+                </div>
             </div>
-            <div>
-            <mat-form-field >
-                <input matInput placeholder="Postal">
-            </mat-form-field>
-            </div>
-            <div>
-            <mat-form-field >
-                <input matInput placeholder="Telephone">
-            </mat-form-field>
-            </div>
-            <div>
-            <mat-form-field >
-                <input matInput placeholder="Email">
-            </mat-form-field>
-            </div>
-            <div>
-            <mat-form-field >
-                <input matInput placeholder="Fax">
-            </mat-form-field>
-            </div>
-
         </li>
         
         <li>
-            <p>Address and Contact Of Head Office</p>
+            <p>Address and Contact Of Branch(es) Where activity/ transaction occured</p>
             <div>
             <mat-form-field >
                 <input matInput placeholder="Physical">
@@ -79,33 +86,172 @@
             Part II: Information about Person or Entity engaging in Suspicious Activity
         </h3>
         <li>
-            <p>Address and Contact Of Head Office</p>
-            <div>
-            <mat-form-field >
-                <input matInput placeholder="Physical">
-            </mat-form-field>
-            </div>
-            <div>
-            <mat-form-field >
-                <input matInput placeholder="Postal">
-            </mat-form-field>
-            </div>
-            <div>
-            <mat-form-field >
-                <input matInput placeholder="Telephone">
-            </mat-form-field>
-            </div>
-            <div>
-            <mat-form-field >
-                <input matInput placeholder="Email">
-            </mat-form-field>
-            </div>
-            <div>
-            <mat-form-field >
-                <input matInput placeholder="Fax">
-            </mat-form-field>
-            </div>
+                <div class="row">
+                    <div class="col-12"></div>
+                    <div class="col-6">Surname (or Name of Entity)</div>
+                    <div class="col-6">
+                        <mat-form-field class="full-parent-width form-input">
+                            <input matInput placeholder="Surname">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-6">First Name </div>
+                    <div class="col-6">
+                    <mat-form-field class="full-parent-width form-input">
+                        <input matInput placeholder="First Name">
+                    </mat-form-field>
+                    </div>
+                    <div class="col-6">Middle Name </div>
+                    <div class="col-6">
+                    <mat-form-field class="full-parent-width form-input">
+                        <input matInput placeholder="Middle Name">
+                    </mat-form-field>
+                    </div>
+                </div>
 
+        </li>
+        <li>
+            <p>Postal & Physical Address in Country of Residence</p>
+            <div class="row">
+                    <div class="col-12"></div>
+                    <div class="col-4">Postal</div>
+                    <div class="col-8">
+                        <mat-form-field class="full-parent-width form-input">
+                            <input matInput placeholder="Postal">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-4">Physical </div>
+                    <div class="col-8">
+                    <mat-form-field class="full-parent-width form-input">
+                        <input matInput placeholder="Physical">
+                    </mat-form-field>
+                    </div>
+            </div>
+        </li>
+        <li>
+            <div class="row">
+                    <div class="col-6">Date Of Birth/Incorporation</div>
+                    <div class="col-6">
+                        <mat-form-field class="float-right full-parent-width">
+                            <input matInput placeholder="Date Of Birth/Incorporation">
+                        </mat-form-field>
+                    </div>
+            </div>  
+        </li>
+        <li>           
+            <div class="row">
+                <div class="col-6">Identification Document</div>
+                <div class="col-6">
+                    <mat-form-field class="full-parent-width">
+                            <mat-select placeholder="Identification Document">
+                                <mat-option value="NationalID">
+                                    National ID Card
+                                </mat-option>
+                                <mat-option value="Passport">
+                                    Passport
+                                </mat-option>
+                                <mat-option value="CertificateOfCorporation">
+                                    Certificate Of Corporation
+                                </mat-option>
+                            </mat-select>
+                    </mat-form-field>                
+                </div>
+                <div class="col-4">Identification Document No </div>
+                <div class="col-8">
+                <mat-form-field class="full-parent-width form-input">
+                    <input matInput placeholder="Identification Document No">
+                </mat-form-field>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="row">
+                    <div class="col-6">Occupation or Business</div>
+                    <div class="col-6">
+                        <mat-form-field class="float-right full-parent-width">
+                            <input matInput placeholder="Occupation or Business">
+                        </mat-form-field>
+                    </div>
+            </div>  
+        </li>
+        <li>
+            <div class="row" id="identity-verification">
+                <div class="col-6">Identity verified by (where applicable):</div>
+                <div class="col-12"><hr></div>
+                <div class="col-3">
+                    <mat-checkbox>National ID Card</mat-checkbox>
+                </div>
+                <div class="col-3">
+                        <mat-checkbox>Passport</mat-checkbox>
+                </div>
+                <div class="col-3">
+                    <mat-checkbox>Certificate Of Incorporation</mat-checkbox>
+                </div>
+                <div class="col-3">
+                        <mat-checkbox>Other (Specify)</mat-checkbox>
+                </div>
+                <div class="col-2"> </div>
+                <div class="col-10">
+                <mat-form-field class="full-parent-width form-input">
+                    <input matInput placeholder="if other, specify">
+                </mat-form-field>
+                </div>
+                <div class="col-2"> </div>
+                <div class="col-10">
+                <mat-form-field class="full-parent-width form-input">
+                    <input matInput placeholder="Date & Place issued">
+                </mat-form-field>
+                </div> 
+                <div class="col-12"><hr></div>  
+            </div>      
+        </li>
+        <li>
+            <div class="row">
+                <div class="col-6">Relationship to the reporting Institution</div>
+                <div class="col-6">
+                    <mat-form-field class="full-parent-width">
+                            <mat-select placeholder="Relationship">
+                                <mat-option value="accountant">
+                                    Accountant
+                                </mat-option>
+                                <mat-option value="agnet">
+                                    Agent
+                                </mat-option>
+                                <mat-option value="broker">
+                                    Broker
+                                </mat-option>
+                            </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">if other, specify </div>
+                <div class="col-8">
+                <mat-form-field class="full-parent-width form-input">
+                    <input matInput placeholder="specify other">
+                </mat-form-field>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="row">
+                <div class="col-6">(i)is</div>
+                <div class="col-6">
+                    <mat-form-field class="full-parent-width">
+                        <mat-select placeholder="Relationship">
+                            <mat-option value="Yes">
+                                Yes
+                            </mat-option>
+                            <mat-option value="No">
+                                No
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="col-4">if No, specify </div>
+                <div class="col-8">
+                <mat-form-field class="full-parent-width form-input">
+                    <input matInput placeholder="specify other">
+                </mat-form-field>
+                </div>
+            </div>
         </li>
         </ol>
     </form>
