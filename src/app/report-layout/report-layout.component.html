@@ -1,241 +1,333 @@
 <div id="body-layout">
     <form class="example-form">
-        <ol>
-            <li>           
-                <div class="row">
-                <div class="col-6">Select Report Type</div>
-                <div class="col-6"><app-dropdown class="full-parent-width" ></app-dropdown></div>
-                </div>
-            </li>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-6"><label class="item-label">1. Select Report Type</label></div>
+                <div class="col-6"><app-dropdown></app-dropdown></div>
+            </div>
         <h3 class="part-number-header">
             Part I: Particulars of the Reporting Institution
         </h3>
-        
-        <li>
-            <div class="row">
-                <div class="col-6">Name Of the Reporting Institution</div>
-                <div class="col-6">
-                    <mat-form-field class="float-right full-parent-width">
-                        <input matInput placeholder="Reporting Institution">
-                    </mat-form-field>
-                </div>
+
+        <div class="row">
+            <div class="col-6">
+                <label class="item-label">2. Name Of the Reporting Institution</label>
             </div>
-        </li>
-        <li>
-            <p>Address and Contact Of Head Office</p>
-            <div class="row">
-                <div class="col-12">
-                    <mat-form-field >
-                        <input matInput placeholder="Physical">
-                    </mat-form-field>
-                </div>
-                <div class="col-12">
-                <mat-form-field >
+            <div class="col-6">
+                <mat-form-field class="float-right full-parent-width">
+                    <input matInput placeholder="Reporting Institution">
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <label class="item-label">
+                    3. Address and Contact Of Head Office
+                </label>
+            </div>
+            <div class="col-4">
+                <label class="sub-item-label">Physical</label>
+            </div>
+            <div class="col-8">
+                <mat-form-field class="float-right full-parent-width">
+                    <input matInput placeholder="Physical">
+                </mat-form-field>
+            </div>
+            <div class="col-4">
+                <label class="sub-item-label">Postal</label>
+            </div>
+            <div class="col-8">
+                <mat-form-field class="float-right full-parent-width">
                     <input matInput placeholder="Postal">
                 </mat-form-field>
-                </div>
-                <div class="col-12">
-                <mat-form-field >
+            </div>
+            <div class="col-4">
+                <label class="sub-item-label">Telephone</label>
+            </div>
+            <div class="col-8">
+                <mat-form-field class="float-right full-parent-width">
                     <input matInput placeholder="Telephone">
-                </mat-form-field>
-                </div>
-                <div class="col-12">
-                <mat-form-field >
+                </mat-form-field> 
+            </div>
+            <div class="col-4">
+                <label class="sub-item-label">Fax</label>
+            </div>
+            <div class="col-8">
+                    <mat-form-field class="float-right full-parent-width">
+                        <input matInput placeholder="Fax">
+                    </mat-form-field>
+            </div>
+            <div class="col-4">
+                <label class="sub-item-label">Email</label>
+            </div>
+            <div class="col-8">
+                <mat-form-field class="float-right full-parent-width">
                     <input matInput placeholder="Email">
                 </mat-form-field>
-                </div>
-                <div class="col-12">
-                <mat-form-field >
-                    <input matInput placeholder="Fax">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <label class="item-label">
+                    4. Address and Contact Of Branch(es) Where activity/ transaction occured
+                </label>
+            </div>
+            <div class="col-4">
+                <label class="sub-item-label">Physical</label>
+            </div>
+            <div class="col-8">
+                <mat-form-field class="float-right full-parent-width">
+                    <input matInput placeholder="Physical">
                 </mat-form-field>
-                </div>
             </div>
-        </li>
-        
-        <li>
-            <p>Address and Contact Of Branch(es) Where activity/ transaction occured</p>
-            <div>
-            <mat-form-field >
-                <input matInput placeholder="Physical">
-            </mat-form-field>
+            <div class="col-4">
+                <label class="sub-item-label">Postal</label>
             </div>
-            <div>
-            <mat-form-field >
-                <input matInput placeholder="Postal">
-            </mat-form-field>
+            <div class="col-8">
+                <mat-form-field class="float-right full-parent-width">
+                    <input matInput placeholder="Postal">
+                </mat-form-field>
             </div>
-            <div>
-                <mat-form-field >
+            <div class="col-4">
+                <label class="sub-item-label">Telephone</label>
+            </div>
+            <div class="col-8">
+                <mat-form-field class="float-right full-parent-width">
                     <input matInput placeholder="Telephone">
+                </mat-form-field> 
+            </div>
+            <div class="col-4">
+                <label class="sub-item-label">Fax</label>
+            </div>
+            <div class="col-8">
+                    <mat-form-field class="float-right full-parent-width">
+                        <input matInput placeholder="Fax">
+                    </mat-form-field>
+            </div>
+            <div class="col-4">
+                <label class="sub-item-label">Email</label>
+            </div>
+            <div class="col-8">
+                <mat-form-field class="float-right full-parent-width">
+                    <input matInput placeholder="Email">
                 </mat-form-field>
             </div>
-            <div>
-            <mat-form-field >
-                <input matInput placeholder="Email">
-            </mat-form-field>
-            </div>
-            <div>
-            <mat-form-field >
-                <input matInput placeholder="Fax">
-            </mat-form-field>
-            </div>
+        </div>
+    </div>
 
-        </li>
+
+    <!--  PART II             -------------------------------------------->
+
+
+    <div class="container">
         <h3 class="part-number-header">
             Part II: Information about Person or Entity engaging in Suspicious Activity
         </h3>
-        <li>
-                <div class="row">
-                    <div class="col-12"></div>
-                    <div class="col-6">Surname (or Name of Entity)</div>
-                    <div class="col-6">
-                        <mat-form-field class="full-parent-width form-input">
-                            <input matInput placeholder="Surname">
-                        </mat-form-field>
-                    </div>
-                    <div class="col-6">First Name </div>
-                    <div class="col-6">
-                    <mat-form-field class="full-parent-width form-input">
+        <div class="row">
+            <div class="col-12">5. Person or Entity Information</div>
+            <div class="col-4">
+                <label class="sub-item-label">(a) Surname (or Name of Entity)</label>
+            </div>
+            <div class="col-8">
+                <mat-form-field class="float-right full-parent-width">
+                    <input matInput placeholder="Surname">
+                </mat-form-field> 
+            </div>
+            <div class="col-4">
+                <label class="sub-item-label">(b) First Name</label>
+            </div>
+            <div class="col-8">
+                    <mat-form-field class="float-right full-parent-width">
                         <input matInput placeholder="First Name">
                     </mat-form-field>
-                    </div>
-                    <div class="col-6">Middle Name </div>
-                    <div class="col-6">
-                    <mat-form-field class="full-parent-width form-input">
-                        <input matInput placeholder="Middle Name">
-                    </mat-form-field>
-                    </div>
-                </div>
+            </div>
+            <div class="col-4">
+                <label class="sub-item-label">(c) Middle Name</label>
+            </div>
+            <div class="col-8">
+                <mat-form-field class="float-right full-parent-width">
+                    <input matInput placeholder="Middle Name">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-12">
+            <label class="item-label">
+                6. Postal & Physical Address in Country of Residence
+            </label>
+        </div>
+        <div class="col-4">
+            <label class="sub-item-label">Postal</label>
+        </div>
+        <div class="col-8">
+            <mat-form-field class="float-right full-parent-width">
+                <input matInput placeholder="Postal">
+            </mat-form-field>
+        </div>
+        <div class="col-4">
+            <label class="sub-item-label">Physical</label>
+        </div>
+        <div class="col-8">
+            <mat-form-field class="float-right full-parent-width">
+                <input matInput placeholder="Physical">
+            </mat-form-field>
+        </div>
+        </div>
 
-        </li>
-        <li>
-            <p>Postal & Physical Address in Country of Residence</p>
-            <div class="row">
-                    <div class="col-12"></div>
-                    <div class="col-4">Postal</div>
-                    <div class="col-8">
-                        <mat-form-field class="full-parent-width form-input">
-                            <input matInput placeholder="Postal">
-                        </mat-form-field>
-                    </div>
-                    <div class="col-4">Physical </div>
-                    <div class="col-8">
-                    <mat-form-field class="full-parent-width form-input">
-                        <input matInput placeholder="Physical">
-                    </mat-form-field>
-                    </div>
+        <div class="row">
+            <div class="col-6">
+                <label class="item-label">7. Date Of Birth/Incorporation</label>
             </div>
-        </li>
-        <li>
-            <div class="row">
-                    <div class="col-6">Date Of Birth/Incorporation</div>
-                    <div class="col-6">
-                        <mat-form-field class="float-right full-parent-width">
-                            <input matInput placeholder="Date Of Birth/Incorporation">
-                        </mat-form-field>
-                    </div>
-            </div>  
-        </li>
-        <li>           
-            <div class="row">
-                <div class="col-6">Identification Document</div>
-                <div class="col-6">
-                    <mat-form-field class="full-parent-width">
-                            <mat-select placeholder="Identification Document">
-                                <mat-option value="NationalID">
-                                    National ID Card
-                                </mat-option>
-                                <mat-option value="Passport">
-                                    Passport
-                                </mat-option>
-                                <mat-option value="CertificateOfCorporation">
-                                    Certificate Of Corporation
-                                </mat-option>
-                            </mat-select>
-                    </mat-form-field>                
-                </div>
-                <div class="col-4">Identification Document No </div>
-                <div class="col-8">
-                <mat-form-field class="full-parent-width form-input">
+            <div class="col-6">
+                <mat-form-field class="float-right full-parent-width">
+                    <input matInput placeholder="Date Of Birth/Incorporation">
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <label class="item-label">8. Identification Document</label>
+            </div>
+            <div class="col-6">
+                <mat-form-field class="full-parent-width">
+                        <mat-select placeholder="Identification Document">
+                            <mat-option value="NationalID">
+                                National ID Card
+                            </mat-option>
+                            <mat-option value="Passport">
+                                Passport
+                            </mat-option>
+                            <mat-option value="CertificateOfCorporation">
+                                Certificate Of Corporation
+                            </mat-option>
+                        </mat-select>
+                </mat-form-field>        
+            </div>
+            <div class="col-6">
+                <label class="item-label">&nbsp; &nbsp;    Identification Document No</label>
+            </div>
+            <div class="col-6">
+            <mat-form-field class="full-parent-width form-input">
                     <input matInput placeholder="Identification Document No">
-                </mat-form-field>
-                </div>
+            </mat-form-field>
             </div>
-        </li>
-        <li>
-            <div class="row">
-                    <div class="col-6">Occupation or Business</div>
-                    <div class="col-6">
-                        <mat-form-field class="float-right full-parent-width">
-                            <input matInput placeholder="Occupation or Business">
-                        </mat-form-field>
-                    </div>
-            </div>  
-        </li>
-        <li>
-            <div class="row" id="identity-verification">
-                <div class="col-6">Identity verified by (where applicable):</div>
-                <div class="col-12"><hr></div>
-                <div class="col-3">
-                    <mat-checkbox>National ID Card</mat-checkbox>
-                </div>
-                <div class="col-3">
-                        <mat-checkbox>Passport</mat-checkbox>
-                </div>
-                <div class="col-3">
-                    <mat-checkbox>Certificate Of Incorporation</mat-checkbox>
-                </div>
-                <div class="col-3">
-                        <mat-checkbox>Other (Specify)</mat-checkbox>
-                </div>
-                <div class="col-2"> </div>
-                <div class="col-10">
-                <mat-form-field class="full-parent-width form-input">
-                    <input matInput placeholder="if other, specify">
+            <div class="col-6">
+                <label class="item-label">9. Occupation or Business</label>
+            </div>
+            <div class="col-6">
+            <mat-form-field class="full-parent-width form-input">
+                    <input matInput placeholder="Occupation or Business">
+            </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+                <mat-card class="identity-card">
+                    
+                    <mat-card-header >
+                        <div class="row">
+                            <div class="col-12">10. Identity verified by (where applicable):</div>
+                        </div>
+                    </mat-card-header>
+
+                    <mat-card-content class="full-parent-width">
+                        <div class="row">
+                        <div class="col-3">
+                            <mat-checkbox>National ID Card</mat-checkbox>
+                        </div>
+                        <div class="col-3">
+                                <mat-checkbox>Passport</mat-checkbox>
+                        </div>
+                        <div class="col-3">
+                            <mat-checkbox>Certificate Of Incorporation</mat-checkbox>
+                        </div>
+                        <div class="col-3">
+                                <mat-checkbox>Other (Specify)</mat-checkbox>
+                        </div>
+                    
+                        <div class="col-4">
+                            <label class="sub-item-label">If other, Specify</label>
+                        </div>
+                        <div class="col-8">
+                            <mat-form-field class="float-right full-parent-width">
+                                <input matInput>
+                            </mat-form-field>
+                        </div> 
+                        <div class="col-4">
+                            <label class="sub-item-label">Date & Place issued</label>
+                        </div>
+                        <div class="col-8">
+                            <mat-form-field class="float-right full-parent-width">
+                                <input matInput>
+                            </mat-form-field>
+                        </div>     
+                        </div>
+                    </mat-card-content>
+
+                </mat-card>
+                  
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <label class="item-label">11. Relationship to the reporting Institution</label>
+            </div>
+            <div class="col-6">
+                <mat-form-field class="full-parent-width">
+                    <mat-select placeholder="Relationship">
+                        <mat-option value="accountant">
+                            Accountant
+                        </mat-option>
+                        <mat-option value="agnet">
+                            Agent
+                        </mat-option>
+                        <mat-option value="broker">
+                            Broker
+                        </mat-option>
+                        <mat-option value="client">
+                            Client/Customer
+                        </mat-option>
+                        <mat-option value="depositor">
+                            Depositor
+                        </mat-option>
+                        <mat-option value="drirector">
+                            Director
+                        </mat-option>
+                        <mat-option value="employee">
+                            Employee
+                        </mat-option>
+                        <mat-option value="broker">
+                            Service Provider
+                        </mat-option>
+                        <mat-option value="broker">
+                            Officer
+                        </mat-option>
+                        <mat-option value="broker">
+                            Shareholder
+                        </mat-option>
+                        <mat-option value="broker">
+                            Other(Specify)
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>        
+            </div>
+            <div class="col-4">
+                <label class="sub-item-label">if other, specify</label>
+            </div>
+            <div class="col-8">
+                <mat-form-field class="float-right full-parent-width">
+                    <input matInput placeholder="other">
                 </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-6">
+                    <label class="item-label">
+                        12. (i) Is the person affiliated with the reporting institution</label>
                 </div>
-                <div class="col-2"> </div>
-                <div class="col-10">
-                <mat-form-field class="full-parent-width form-input">
-                    <input matInput placeholder="Date & Place issued">
-                </mat-form-field>
-                </div> 
-                <div class="col-12"><hr></div>  
-            </div>      
-        </li>
-        <li>
-            <div class="row">
-                <div class="col-6">Relationship to the reporting Institution</div>
                 <div class="col-6">
                     <mat-form-field class="full-parent-width">
-                            <mat-select placeholder="Relationship">
-                                <mat-option value="accountant">
-                                    Accountant
-                                </mat-option>
-                                <mat-option value="agnet">
-                                    Agent
-                                </mat-option>
-                                <mat-option value="broker">
-                                    Broker
-                                </mat-option>
-                            </mat-select>
-                    </mat-form-field>
-                </div>
-                <div class="col-4">if other, specify </div>
-                <div class="col-8">
-                <mat-form-field class="full-parent-width form-input">
-                    <input matInput placeholder="specify other">
-                </mat-form-field>
-                </div>
-            </div>
-        </li>
-        <li>
-            <div class="row">
-                <div class="col-6">(i)is</div>
-                <div class="col-6">
-                    <mat-form-field class="full-parent-width">
-                        <mat-select placeholder="Relationship">
+                        <mat-select >
                             <mat-option value="Yes">
                                 Yes
                             </mat-option>
@@ -243,16 +335,339 @@
                                 No
                             </mat-option>
                         </mat-select>
+                    </mat-form-field>        
+                </div>
+                <div class="col-4">
+                    <label class="sub-item-label">if other, specify</label>
+                </div>
+                <div class="col-8">
+                    <mat-form-field class="full-parent-width">
+                        <mat-select >
+                            <mat-option value="resigned">
+                                Resigned
+                            </mat-option>
+                            <mat-option value="suspended">
+                                Suspended
+                            </mat-option>
+                            <mat-option value="terminated">
+                                Terminated
+                            </mat-option>
+                        </mat-select>
                     </mat-form-field>
                 </div>
-                <div class="col-4">if No, specify </div>
-                <div class="col-8">
-                <mat-form-field class="full-parent-width form-input">
-                    <input matInput placeholder="specify other">
-                </mat-form-field>
+
+
+                <div class="col-6">
+                    <label class="item-label">
+                            &nbsp; &nbsp;    Date of resignation, suspension, termination</label>
+                </div>
+                <div class="col-6">
+                    <mat-form-field class="float-right full-parent-width">
+                        <input matInput placeholder="Date">
+                    </mat-form-field>
                 </div>
             </div>
-        </li>
-        </ol>
+    </div>
+
+
+
+    <!---------------------   PART III         --------------------------->
+
+    <div class="container">
+            <h3 class="part-number-header">
+                Part III: Information about Suspicious Activity
+            </h3>
+            <div class="row">
+                <div class="col-6">
+                    <label class="item-label">13. Date of transaction or suspicious activity</label>
+                </div>
+                <div class="col-6">
+                    <mat-form-field class="float-right full-parent-width">
+                        <input matInput placeholder="Date ">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label class="item-label">14. Transaction type</label>
+                </div>
+                <div class="col-6">
+                    <mat-form-field class="float-right full-parent-width">
+                        <input matInput placeholder="Transaction type">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label class="item-label">15. (a)Account name(s), where applicable</label>
+                </div>
+                <div class="col-6">
+                    <mat-form-field class="float-right full-parent-width">
+                        <input matInput placeholder="Account name">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label class="item-label">
+                            &nbsp; &nbsp; &nbsp;    (b)Account number(s) affected, where applicable</label>
+                </div>
+                <div class="col-6">
+                    <mat-form-field class="float-right full-parent-width">
+                        <input matInput placeholder="Account number">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label class="item-label">16. Account involved (in Kshs)</label>
+                </div>
+                <div class="col-6">
+                    <mat-form-field class="float-right full-parent-width">
+                        <input matInput placeholder="Account involved">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label class="item-label">
+                        17. (i) General description of suspicious activity</label>
+                </div>
+                <div class="col-6">
+                    <mat-form-field class="full-parent-width">
+                        <mat-select >
+                            <mat-option value="cash-deposit">
+                                Cash Deposit
+                            </mat-option>
+                            <mat-option value="cash-exchange">
+                                Cash Exchange
+                            </mat-option>
+                            <mat-option value="cash-payment">
+                                Cash Payment
+                            </mat-option>
+                            <mat-option value="cash-withdrawal">
+                                Cash Withdrawal
+                            </mat-option>
+                            <mat-option value="abroad-deposit">
+                                Deposit from abroad
+                            </mat-option>
+                            <mat-option value="transfer-abroad">
+                                Transfer Abroad
+                            </mat-option>
+                            <mat-option value="transfer-to-domestic">
+                                Transfer to Domestic Bank
+                            </mat-option>
+                            <mat-option value="transfer-from-domestic">
+                                Transfer from Domestic Bank
+                            </mat-option>
+                            <mat-option value="money-laundering">
+                                Money Laundering
+                            </mat-option>
+                            <mat-option value="bribery">
+                                Bribery
+                            </mat-option>
+                            <mat-option value="cheque-fraud">
+                                Cheque Fraud
+                            </mat-option>
+                            <mat-option value="identity-theft">
+                                Identity Theft
+                            </mat-option>  
+                            <mat-option value="credit-card-fraud">
+                                Credit Card Fraud
+                            </mat-option>
+                            <mat-option value="false-statment">
+                                False Statment
+                            </mat-option>
+                            <mat-option value="misuse-position">
+                                Misuse Position
+                            </mat-option>  
+                            <mat-option value="other">
+                                Other(specify)
+                            </mat-option>        
+                        </mat-select>
+                    </mat-form-field>        
+                </div>
+                <div class="col-6">
+                    <label class="item-label">
+                            &nbsp;&nbsp; &nbsp;   (ii)Other, Specify</label>
+                </div>
+                <div class="col-6">
+                    <mat-form-field class="float-right full-parent-width">
+                        <input matInput placeholder="Other">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <label class="item-label">18. Source of funds</label>
+                </div>
+                <div class="col-6">
+                    <mat-form-field class="float-right full-parent-width">
+                        <input matInput placeholder="Source of funds">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label class="item-label">19. Particulars of the destination of the funds</label>
+                </div>
+                <div class="col-6">
+                    <mat-form-field class="float-right full-parent-width">
+                        <input matInput placeholder="Particulars of the destination of the funds">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <label class="item-label">20. Description of the transaction/activity</label>
+                </div>
+                <div class="col-8">
+                    <mat-form-field class="full-parent-width">
+                        <mat-label>Description of transaction/activity</mat-label>
+                        <textarea matInput rows="4" ></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-4">
+                    <label class="item-label">21. Basis of suspicion</label>
+                </div>
+                <div class="col-8">
+                    <mat-form-field class="full-parent-width">
+                        <mat-label>Basis of suspicion</mat-label>
+                        <textarea matInput rows="4" ></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label class="item-label">
+                        22. Has suspicious activity had material impact on or otherwise
+                    adversely affected the reporting institution?</label>
+                </div>
+                <div class="col-6">
+                    <mat-form-field class="full-parent-width">
+                        <mat-select >
+                            <mat-option value="yes">
+                                Yes
+                            </mat-option>  
+                            <mat-option value="no">
+                                No
+                            </mat-option>        
+                        </mat-select>
+                    </mat-form-field>        
+                </div>
+                <div class="col-4">
+                    <label class="sub-item-label">if yes, describe impact</label>
+                </div>
+                <div class="col-8">
+                    <mat-form-field class="float-right full-parent-width">
+                        <input matInput placeholder="Other">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label class="item-label">
+                        23. Has any law enforcement authority been notified in any manner?
+                        if so, indicate the following</label>
+                </div>
+                <div class="col-6">
+                    <mat-form-field class="full-parent-width">
+                        <mat-select >
+                            <mat-option value="yes">
+                                Yes
+                            </mat-option>  
+                            <mat-option value="no">
+                                No
+                            </mat-option>        
+                        </mat-select>
+                    </mat-form-field>        
+                </div>
+                <div class="col-4">
+                    <label class="item-label">
+                            &nbsp;&nbsp; &nbsp;   (a) Authority</label>
+                </div>
+                <div class="col-8">
+                    <mat-form-field class="float-right full-parent-width">
+                        <input matInput placeholder="Authority">
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <label class="item-label">
+                            &nbsp;&nbsp; &nbsp;   (b) Specific person notified</label>
+                </div>
+                <div class="col-8">
+                    <mat-form-field class="float-right full-parent-width">
+                        <input matInput placeholder="person notified">
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <label class="item-label">
+                            &nbsp;&nbsp; &nbsp;   (c) How notified </label>
+                </div>
+                <div class="col-8">
+                    <mat-form-field class="float-right full-parent-width">
+                        <input matInput placeholder="How">
+                    </mat-form-field>
+                </div>
+                <div class="col-4">
+                    <label class="item-label">
+                            &nbsp;&nbsp; &nbsp;   (d) Details provided</label>
+                </div>
+                <div class="col-8">
+                    <mat-form-field class="float-right full-parent-width">
+                        <input matInput placeholder="Details">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label class="item-label">24. Has any other action been taken by the reporting
+                        institution?
+                    </label>
+                </div>
+                <div class="col-8">
+                    <mat-form-field class="full-parent-width">
+                        <mat-label>Other Actions taken</mat-label>
+                        <textarea matInput rows="4" ></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+
+
+    <!---------------------   PART IV         --------------------------->
+
+    <div class="container">
+        <h3 class="part-number-header">
+            Part IV: Details or List of Available Documents
+        </h3>
+        <div class="row">
+            <div class="col-12">
+            <mat-form-field class="full-parent-width">
+                <mat-label>Details</mat-label>
+                <textarea matInput rows="6" ></textarea>
+            </mat-form-field>
+            </div> 
+        </div>
+    </div>
+
+
+
+    <!---------------------   PART V         --------------------------->
+
+    <div class="container">
+        <h3 class="part-number-header">
+            Part V: Information about Money Laundering Reporting Officer
+        </h3>
+
+
+    </div>
+
+
     </form>
 </div>

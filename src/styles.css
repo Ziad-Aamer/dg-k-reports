@@ -7,11 +7,26 @@
 .full-parent-width{
     width:100%;
 }
-
-.col-6{
-    padding-right: 2%;
+.item-label{
+    padding-top:24px;
 }
-
+.sub-item-label{
+    padding-left:25%;
+    padding-top:24px;
+}
+.identity-card{
+    width:100%;
+    margin-bottom:30px;
+}
+.identity-card > mat-card-content {
+    padding-left:10%;
+    padding-top:35px;
+    padding-right:3%;
+    font-size:90%;
+}
+/*.sub-item-input{
+    padding-right:25%;
+}*/
 #title3-h2{
     padding: 30px;
     color: #00004d;
@@ -25,7 +40,7 @@
 .part-number-header{
     color: #cc0000;
     text-align: center;
-    margin: 25px 0px 40px 0px;
+    margin: 40px 0px 40px 0px;
 }
 
 .form-input {
