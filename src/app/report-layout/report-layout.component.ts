@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import {NgForm} from '@angular/forms';
+import {StrReportServiceService} from '../Services/str-report-service.service';
 @Component({
   selector: 'app-report-layout',
   templateUrl: './report-layout.component.html',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReportLayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private reportService: StrReportServiceService) { }
 
   ngOnInit() {
+  }
+
+  saveReport(reprotForm: NgForm): void {
+    // this.reportService.addReport(reprotForm);
   }
 
 }

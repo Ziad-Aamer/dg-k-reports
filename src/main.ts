@@ -7,6 +7,6 @@ import { environment } from './environments/environment';
 if (environment.production) {
   enableProdMode();
 }
-
+console.log("I am in the main.ts file");
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));

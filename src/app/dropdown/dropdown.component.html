@@ -1,5 +1,5 @@
 <mat-form-field class="full-parent-width">
-    <mat-select placeholder="Report type" >
+    <mat-select ngModel name="reportType" placeholder="Report type" >
       <mat-option *ngFor="let report of reports" [value]="report.value">
         {{report.viewValue}}
       </mat-option>

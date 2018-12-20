@@ -7,6 +7,7 @@ import { ReportLayoutComponent } from './report-layout/report-layout.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import {MatFormFieldModule, MatSelectModule, MatOptionModule, MatInputModule, MatCheckboxModule
 , MatCardModule } from '@angular/material';
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +16,7 @@ import {MatFormFieldModule, MatSelectModule, MatOptionModule, MatInputModule, Ma
     DropdownComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
